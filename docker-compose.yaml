@@ -13,6 +13,7 @@ services:
     build: ./jenkins   // Burada hangi klasörde ise ona göre güncellenecektir.
     container_name: c_jenkins_docker
     restart: always
+    privileged: true
     ports:
       - "8080:8080"
       - "50000:50000"
