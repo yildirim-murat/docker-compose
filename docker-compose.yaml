@@ -14,10 +14,11 @@ services:
     container_name: c_jenkins_docker
     restart: always
     privileged: true
-    environment:         # Burası hata verebiliyor. environment maddesini silebilirsin.
-      DOCKER_HOST: tcp://docker:2376
-      DOCKER_CERT_PATH: /certs/client
-      DOCKER_TLS_VERIFY: '1'
+    user: root
+    # environment:
+    #  DOCKER_HOST: tcp://docker:2376
+    #  DOCKER_CERT_PATH: /certs/client
+    #  DOCKER_TLS_VERIFY: '1'
     ports:
       - "8000:8080"
       - "50000:50000"
