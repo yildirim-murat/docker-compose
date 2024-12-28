@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.440.3-jdk17
+FROM jenkins/jenkins:jdk17
 USER root
 RUN groupadd docker
 RUN apt-get update && apt-get install -y lsb-release
