@@ -29,6 +29,7 @@ services:
 volumes:
   jenkins_home:
   portainer_data:
+  jenkins-docker-certs:
 #NOT: Eğer şu hatayı alırsak : 
 # ERROR: permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.45/info": dial unix /var/run/docker.sock: connect: permission denied
 # Docker ait /var/run/docker.sock yetkilerini Jenkins tarafından yazılabilir yetkisi vermelisin.
